@@ -177,63 +177,54 @@ let NavBar = () => {
                             onClick={() => toggleSubPage('home')}
                             className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
                             >
-                        Sign & Auth
+                        Home
                         </button>
                         {subPageOpen.home && (
                             <ul className="pl-5">
                                 <li>
                                     <a
-                                        href="/sis/login"
+                                        href="/sis/home/homePage"
                                         className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
                                     >
-                                        Sign In
+                                        Home
                                     </a>
                                 </li>   
 
                                 <li>
                                     <a
-                                        href="/sis/signEmail"
+                                        href="/sis/portfolio"
                                         className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
                                     >
-                                        Sign In - Email
+                                        Portfolio Page 1
                                     </a>
                                 </li>  
 
                                 <li>
                                     <a
-                                        href="/sis/createAccount"
+                                        href="/sis/portfolio-page2"
                                         className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
                                     >
-                                       Create Account
+                                       Portfolio Page 2
                                     </a>
                                 </li> 
 
                                 <li>
                                     <a
-                                        href="/sis/enterOtp"
+                                        href="/sis/marketPage1"
                                         className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
                                     >
-                                       Enter OTP
+                                       Market Page 1
                                     </a>
                                 </li>   
 
                                 <li>
                                     <a
-                                        href="/sis/password/forgotPassword"
+                                        href="/sis/password/marketPage2"
                                         className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
                                     >
-                                       Forgot Password 
+                                       Market Page 2
                                     </a>
                                 </li>  
-
-                                <li>
-                                    <a
-                                        href="/sis/password/createPassword"
-                                        className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
-                                    >
-                                       Create Password 
-                                    </a>
-                                </li>   
 
                             </ul>
                         )}
