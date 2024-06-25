@@ -17,6 +17,7 @@ let MarketPage1 = () => {
                     paddingTop: '90px'
                 }}>
 
+                <VisualTopo tipo='3' titulo='Market'/>
                 <div 
                     className="rounded-2 flex-1 bg-white flex flex-col justify-center items-center sm:py-8 sm:px-4" 
                     data-bs-spy="scroll" 
@@ -26,7 +27,6 @@ let MarketPage1 = () => {
                         overflowY: 'auto',
                     }}>
 
-                    <VisualTopo tipo='3' titulo='Market'/>
 
                     <div className="relative " >
                         <div className="flex items-center rounded-full" 
@@ -105,7 +105,7 @@ let MarketPage1 = () => {
                         style={{
                             position: 'absolute',
                             flex: 1,
-                            paddingBottom: '550px'
+                            paddingBottom: '350px'
                         }}>
                         <h5 className="m-0">Live Prices</h5>
                     </div>

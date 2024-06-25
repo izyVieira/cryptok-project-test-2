@@ -14,6 +14,7 @@ let Portfolio = () => {
             
             <div className="min-h-screen flex flex-col w-full ">
 
+
                 <div 
                     className="flex-1 rounded-5 rounded-top-0 flex flex-col justify-center items-center sm:py-8 sm:px-4"
                     style={{
@@ -22,7 +23,7 @@ let Portfolio = () => {
                         minHeight: '350px', 
                     }}>
 
-                   <VisualTopo tipo='2' titulo='Portfolio'/>
+                    <VisualTopo tipo='2' titulo='Portfolio'/>
 
                     <div className=''
                         style={{

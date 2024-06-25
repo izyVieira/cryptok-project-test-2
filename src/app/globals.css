@@ -76,6 +76,25 @@ body {
     box-shadow: 0 0 5px rgba(3, 84, 234, 0.5);
 }
 
+.card-custom {
+  background-color: #fff; 
+  padding: 1rem;
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stat-item {
+  flex: 1;
+  text-align: center;
+}
+.divider {
+  width: 1px;
+  height: 40px;
+  background-color: #e5e7eb; 
+}
+
 
 
 

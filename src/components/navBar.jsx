@@ -15,7 +15,7 @@ let NavBar = () => {
     };
 
     return (
-        <nav className="bg-gray-800 w-full fixed top-0 z-50">
+        <nav className="bg-gray-800 w-full fixed top-0 " style={{ zIndex: '1000' }}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <span className="text-white text-lg font-semibold">Cryptok</span>
@@ -219,16 +219,121 @@ let NavBar = () => {
 
                                 <li>
                                     <a
-                                        href="/sis/password/marketPage2"
+                                        href="/sis/marketPage2"
                                         className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
                                     >
                                        Market Page 2
                                     </a>
                                 </li>  
 
+                                <li>
+                                    <a
+                                        href="/sis/tokenDetail"
+                                        className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                       Token Detail
+                                    </a>
+                                </li> 
+
+                                <li>
+                                    <a
+                                        href="/sis/tokenDetailPage2"
+                                        className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                       Token Detail Page 2
+                                    </a>
+                                </li> 
+
+                                <li>
+                                    <a
+                                        href="/sis/buyToken"
+                                        className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                       Buy Token
+                                    </a>
+                                </li> 
+
+                                <li>
+                                    <a
+                                        href="/sis/buyTokenPage2"
+                                        className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                       Buy Token Page 2
+                                    </a>
+                                </li> 
+
+                                <li>
+                                    <a
+                                        href="/sis/selectToken"
+                                        className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                       Select Token
+                                    </a>
+                                </li> 
+
+
                             </ul>
                         )}
                     </li>
+
+                    <li className="relative group">
+                        <button
+                            onClick={() => toggleSubPage('home2')}
+                            className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
+                            >
+                        Home 2
+                        </button>
+                        {subPageOpen.home2 && (
+                            <ul className="pl-5">
+                                <li>
+                                    <a
+                                        href="/sis/paymentPage1"
+                                        className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                       Payment
+                                    </a>
+                                </li> 
+
+                                <li>
+                                    <a
+                                        href="/sis/paymentMethod"
+                                        className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                       Payment Method
+                                    </a>
+                                </li> 
+
+                                <li>
+                                    <a
+                                        href="/sis/manegeToken"
+                                        className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                       Manege Token
+                                    </a>
+                                </li> 
+
+                                <li>
+                                    <a
+                                        href="/sis/favoritePage1"
+                                        className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                       Favorite Page 1
+                                    </a>
+                                </li> 
+
+                                <li>
+                                    <a
+                                        href="/sis/favoritePage2"
+                                        className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                       Favorite Page 2
+                                    </a>
+                                </li> 
+
+                            </ul>
+                        )}
+                    </li>
+
                 </ul>
             </div>
             )}
