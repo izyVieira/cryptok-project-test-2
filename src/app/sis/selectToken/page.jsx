@@ -49,8 +49,6 @@ const SelectToken = () => {
                                     height: '52px',
                                     backgroundColor: '#F6F8FE'
                                 }}
-                                value={searchTerm}
-                                onChange={e => setSearchTerm(e.target.value)}
                             />
                             <div className="pr-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
@@ -60,7 +58,7 @@ const SelectToken = () => {
                         </div>
                     </div>
 
-                    <Lista items={filteredItems} />
+                    <Lista />
 
                 </div>
 
