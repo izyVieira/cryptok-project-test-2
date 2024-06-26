@@ -67,7 +67,7 @@ let NavBar = () => {
             
             {isOpen && (
             <div className="md:hidden bg-gray-800" id="mobile-menu">
-                <ul className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <ul className="px-2 pt-2 pb-3 space-y-1 sm:px-3 overflow-y-auto">
                     <li className="relative group">
                         <a
                         href="/"
@@ -164,7 +164,7 @@ let NavBar = () => {
                                         href="/sis/languange"
                                         className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
                                     >
-                                       Languange 
+                                       Language 
                                     </a>
                                 </li>     
 
@@ -327,6 +327,100 @@ let NavBar = () => {
                                         className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
                                     >
                                        Favorite Page 2
+                                    </a>
+                                </li> 
+
+                            </ul>
+                        )}
+                    </li>
+
+                    <li className="relative group">
+                        <button
+                            onClick={() => toggleSubPage('setting')}
+                            className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
+                            >
+                        Setting
+                        </button>
+                        {subPageOpen.setting && (
+                            <ul className="pl-5 overflow-y-auto">
+                                <li>
+                                    <a
+                                        href="/sis/profile"
+                                        className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                       Profile
+                                    </a>
+                                </li> 
+
+                                <li>
+                                    <a
+                                        href="/sis/userInfo"
+                                        className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                       User Info
+                                    </a>
+                                </li> 
+
+                                <li>
+                                    <a
+                                        href="/sis/changePassword"
+                                        className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                       Change Password
+                                    </a>
+                                </li> 
+
+                                <li>
+                                    <a
+                                        href="/sis/forgotPassword"
+                                        className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                       Forgot Password
+                                    </a>
+                                </li> 
+
+                                <li>
+                                    <a
+                                        href="/sis/termos"
+                                        className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                       Legal and Policies
+                                    </a>
+                                </li> 
+
+                                <li>
+                                    <a
+                                        href="/sis/languange2"
+                                        className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                       Language
+                                    </a>
+                                </li> 
+
+                                <li>
+                                    <a
+                                        href="/sis/notifications"
+                                        className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                       Notifications
+                                    </a>
+                                </li> 
+
+                                <li>
+                                    <a
+                                        href="/sis/security"
+                                        className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                       Securty
+                                    </a>
+                                </li> 
+
+                                <li>
+                                    <a
+                                        href="/sis/helpAndSupport"
+                                        className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                       Help and Support
                                     </a>
                                 </li> 
 
