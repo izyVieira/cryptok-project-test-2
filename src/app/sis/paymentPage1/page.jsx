@@ -14,21 +14,20 @@ let PaymentPage1 = () => {
         <>
             <NavBar />
             
-            <div className="min-h-screen flex flex-col w-full "
+            <div className="min-h-screen flex flex-col bg-white w-full "
                 style={{
                     paddingBottom: '45px',
                 }}>
 
+                <VisualTopo tipo='1' titulo='Payment'/>
                 <div 
-                    className="rounded-2 flex-1 flex flex-col justify-center items-center sm:py-8 sm:px-4" 
+                    className="rounded-2 flex-1 flex flex-col  items-center sm:py-8 sm:px-4" 
                     data-bs-spy="scroll" 
                     data-bs-smooth-scroll="true" 
                     tabIndex="0"
                     style={{
                         overflowY: 'auto',
                     }}>
-
-                    <VisualTopo tipo='1' titulo='Payment'/>
 
                     <div 
                         className="flex flex-col justify-center items-center"
