@@ -21,13 +21,14 @@ let PaymentPage1 = () => {
 
                 <VisualTopo tipo='1' titulo='Payment'/>
                 <div 
-                    className="rounded-2 flex-1 flex flex-col  items-center sm:py-8 sm:px-4" 
+                    className="rounded-2 flex-1 flex flex-col justify-center items-center sm:py-8 sm:px-4" 
                     data-bs-spy="scroll" 
                     data-bs-smooth-scroll="true" 
                     tabIndex="0"
                     style={{
                         overflowY: 'auto',
                     }}>
+
 
                     <div 
                         className="flex flex-col justify-center items-center"
