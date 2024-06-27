@@ -12,7 +12,7 @@ let MarketPage1 = () => {
         <>
             <NavBar />
             
-            <div className="min-h-screen flex flex-col w-full "
+            <div className="min-h-screen bg-white flex flex-col w-full "
                 style={{
                     paddingTop: '90px'
                 }}>
@@ -101,15 +101,15 @@ let MarketPage1 = () => {
 
                     </div>
 
-                    <div className="w-full px-2 mt-3 flex items-center justify-between"
+                    <div className="w-full px-4  flex items-center justify-between"
                         style={{
                             position: 'absolute',
                             flex: 1,
-                            paddingBottom: '350px'
+                            paddingBottom: '150px',
+                            fontWeight: 700
                         }}>
                         <h5 className="m-0">Live Prices</h5>
                     </div>
-
 
                     <Lista/>
 

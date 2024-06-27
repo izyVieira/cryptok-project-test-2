@@ -7,18 +7,18 @@ import Lista from '@/components/lista';
 import VisualTopo from '@/components/visualTopo';
 import ListaCheck from '@/components/listaCheck';
 
-const ManegeToken = () => {
+let ManegeToken = () => {
 
     return (
         <>
             <NavBar />
 
-            <div className="min-h-screen flex flex-col w-full"
+            <div className="min-h-screen bg-white flex flex-col w-full"
                 style={{
                     paddingTop: '90px'
                 }}>
 
-                <VisualTopo tipo='1' titulo='Menage Token' />
+                <VisualTopo tipo='1' titulo='Menage Token' caminhoVoltar='/sis/paymentMethod' />
 
                 <div
                     className="rounded-2 flex-1 bg-white flex flex-col justify-center items-center sm:py-8 sm:px-4"

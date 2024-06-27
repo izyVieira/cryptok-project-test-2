@@ -17,9 +17,10 @@ let PaymentPage1 = () => {
             <div className="min-h-screen flex flex-col bg-white w-full "
                 style={{
                     paddingBottom: '45px',
+                    paddingTop: '80px'
                 }}>
 
-                <VisualTopo tipo='1' titulo='Payment'/>
+                <VisualTopo tipo='1' titulo='Payment' caminhoVoltar='/sis/buyTokenPage2'/>
                 <div 
                     className="rounded-2 flex-1 flex flex-col justify-center items-center sm:py-8 sm:px-4" 
                     data-bs-spy="scroll" 
@@ -101,7 +102,7 @@ let PaymentPage1 = () => {
                             Pay with
                         </h3>
 
-                        <div class="flex items-center justify-between p-4 bg-blue-50 rounded-lg">
+                        <div class="flex items-center justify-between p-4 rounded-lg my-2" style={{backgroundColor: '#f3f6fb'}}>
                             <div class="flex items-center">
                                 <div class="w-10 h-10 p-2 mr-4 bg-gray-50 rounded-full">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-full h-full text-blue-500">
@@ -124,7 +125,7 @@ let PaymentPage1 = () => {
 
                 </div>
 
-                <Botao titulo='Continue'/>
+                <Botao titulo='Continue' caminho='/sis/paymentMethod'/>
             
             </div>
             

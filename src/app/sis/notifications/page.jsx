@@ -3,25 +3,27 @@ import { useState } from 'react';
 import NavBar from "@/components/navBar";
 import VisualTopo from '@/components/visualTopo';
 
-const Termos = () => {
+let Termos = () => {
 
     
-    const [selectedOption, setSelectedOption] = useState('');
+    let [selectedOption, setSelectedOption] = useState('');
 
-    const handleOptionChange = (event) => {
+    let handleOptionChange = (event) => {
         setSelectedOption(event.target.value);
     };
     return (
         <>
             <NavBar />
             
-            <div className="min-h-screen flex flex-col">
+            <div className="min-h-screen flex flex-col" style={{
+                paddingTop: '80px'
+            }}>
                 
-                <VisualTopo tipo='1' titulo='Notifications'/>  
+                <VisualTopo tipo='1' titulo='Notifications' caminhoVoltar='/sis/profile'/>  
 
                 <div 
                     className="flex-1 flex flex-col items-center mt-8 px-4"
-                    style={{ maxWidth: '800px', margin: 'auto', paddingTop: '75px'}} 
+                    style={{ maxWidth: '800px', margin: 'auto'}} 
                 >
                     <div className="border border-gray-100 rounded-lg p-6 mb-4"
                         style={{width: '327px', height: '300px'}} >

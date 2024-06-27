@@ -6,21 +6,21 @@ import Botao from '@/components/botao';
 
 let ChangePassword = () => {
 
-    const [showPassword, setShowPassword] = useState(false);
-    const [password, setPassword] = useState('');
-    const [passwordValid, setPasswordValid] = useState(false);
+    let [showPassword, setShowPassword] = useState(false);
+    let [password, setPassword] = useState('');
+    let [passwordValid, setPasswordValid] = useState(false);
 
-    const togglePasswordVisibility = () => {
+    let togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
     };
 
-    const handleChangePassword = (e) => {
-        const newPassword = e.target.value;
+    let handleChangePassword = (e) => {
+        let newPassword = e.target.value;
         setPassword(newPassword);
 
         // Validar a senha
-        const hasValidLength = newPassword.length >= 8;
-        const hasSpecialCharacter = /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/.test(newPassword);
+        let hasValidLength = newPassword.length >= 8;
+        let hasSpecialCharacter = /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/.test(newPassword);
         
         // Definir validade da senha
         setPasswordValid(hasValidLength && hasSpecialCharacter);
@@ -33,9 +33,10 @@ let ChangePassword = () => {
             <div className="min-h-screen flex bg-white flex-col w-full "
                 style={{
                     paddingBottom: '45px',
+                    paddingTop: '80px'
                 }}>
 
-                <VisualTopo tipo='1' titulo='Change Password'/>  
+                <VisualTopo tipo='1' titulo='Change Password' caminhoVoltar='/sis/profile'/>  
 
                 <div 
                     className="rounded-2 flex-1 flex flex-col justify-center items-center sm:py-8 sm:px-4" 

@@ -3,10 +3,10 @@ import { useState } from 'react';
 import NavBar from "@/components/navBar";
 import VisualTopo from '@/components/visualTopo';
 
-const Termos = () => {
-    const [agreeTerms, setAgreeTerms] = useState(false);
+let Termos = () => {
+    let [agreeTerms, setAgreeTerms] = useState(false);
 
-    const handleAgreeTerms = () => {
+    let handleAgreeTerms = () => {
         setAgreeTerms(!agreeTerms);
     };
 
@@ -14,13 +14,15 @@ const Termos = () => {
         <>
             <NavBar />
             
-            <div className="min-h-screen flex flex-col">
+            <div className="min-h-screen flex flex-col" style={{
+                paddingTop: '80px'
+            }}>
                 
-                <VisualTopo tipo='1' titulo='Legal and Policies'/>  
+                <VisualTopo tipo='1' titulo='Legal and Policies' caminhoVoltar='/sis/profile'/>  
 
                 <div 
-                    className="flex-1 flex flex-col items-center justify-center mt-8 px-4"
-                    style={{ maxWidth: '800px', margin: 'auto', paddingTop: '85px' }} 
+                    className="flex-1 flex flex-col items-center  mt-8 px-4"
+                    style={{ maxWidth: '800px', margin: 'auto',  }} 
                 >
                     <div className="rounded-lg">
                         <h2 className="text-black text-lg mb-2">Terms</h2>

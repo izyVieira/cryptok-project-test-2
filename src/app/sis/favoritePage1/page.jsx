@@ -12,7 +12,7 @@ let FavoritePage1 = () => {
         <>
             <NavBar />
             
-            <div className="min-h-screen flex flex-col w-full "
+            <div className="min-h-screen bg-white flex flex-col w-full "
                 style={{
                     paddingTop: '90px'
                 }}>

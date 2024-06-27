@@ -6,7 +6,7 @@ import Menu from '@/components/menu';
 import Lista from '@/components/lista';
 import VisualTopo from '@/components/visualTopo';
 
-const SelectToken = () => {
+let SelectToken = () => {
 
     return (
         <>
@@ -17,7 +17,7 @@ const SelectToken = () => {
                     paddingTop: '90px'
                 }}>
 
-                <VisualTopo tipo='1' titulo='Help and Support' />
+                <VisualTopo tipo='1' titulo='Help and Support'  caminhoVoltar='/sis/profile' />
                 <div
                     className="rounded-2 flex-1 bg-white flex flex-col  items-center sm:py-8 sm:px-4"
                     data-bs-spy="scroll"

@@ -4,23 +4,23 @@ let VisualTopo = (props) => {
         <>{
             props.tipo === '1' || !props.tipo
             ?
-            <div className="sticky top-20 z-50"> 
-               <div className="flex justify-start items-center py-4 px-4 sm:px-8 max-w-screen-lg mx-auto">
-                    <a href={props.caminhoVoltar} className="flex items-center justify-center mr-4">
+            <div className={`top-20 z-50 ${props.bg ? 'bg-white' : ''}`}>
+                <div className="flex items-center py-4 px-4 sm:px-8 max-w-screen-lg mx-auto relative">
+                    <a href={props.caminhoVoltar} className="flex items-center justify-center z-10">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                             <circle opacity="0.08" cx="24" cy="24" r="24" fill="#111111" />
                             <path fillRule="evenodd" d="M31 24a1 1 0 0 1-1 1H18.414l3.293 3.293a1 1 0 0 1-1.414 1.414l-5-5a1 1 0 0 1 0-1.414l5-5a1 1 0 1 1 1.414 1.414L18.414 23H30a1 1 0 0 1 1 1z" fill="#111111" />
                         </svg>
                     </a>
-                    <h1 className="flex-1 text-center text-xl sm:text-2xl">{props.titulo}</h1>
+                    <h1 className="absolute left-1/2 transform -translate-x-1/2 text-center text-xl sm:text-2xl">{props.titulo}</h1>
                 </div>
             </div>
             :
             props.tipo === '2'
             ?
 
-            <div className="sticky top-20 z-50 w-100"> 
-                <div className="flex justify-start items-center py-4 px-4 sm:px-8 mb-4 mt-1w-100"> 
+            <div className=" mt-5 z-50 w-100"> 
+                <div className="flex justify-start items-center  px-4 sm:px-8  mt-1w-100"> 
                     <a href={props.caminhoVoltar} className="circle-button">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle opacity="0.08" cx="24" cy="24" r="24" fill="#FEFEFE"/>
@@ -41,7 +41,7 @@ let VisualTopo = (props) => {
             :
             props.tipo === '3'
             ?
-            <div className="sticky top-20 z-50"> 
+            <div className=" top-20 z-50"> 
                 <div className="d-flex justify-content-between align-items-center w-100 pb-5">
 
                     <h1 className="text-center flex-1 text-xl sm:text-2xl">{props.titulo}</h1>
@@ -59,7 +59,7 @@ let VisualTopo = (props) => {
             :
             props.tipo === '4'
             ?
-            <div className="sticky top-20 z-50"> 
+            <div className=" top-20 z-50"> 
                 <div className="flex justify-start items-center py-4 px-4 sm:px-8 mb-4 mt-1w-100"> 
                     <a href={props.caminhoVoltar} className="circle-button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -79,7 +79,10 @@ let VisualTopo = (props) => {
             :
             props.tipo === '5'
             ?
-            <div className="sticky top-20 z-50"> 
+            <div className=" top-20 z-50 w-100"
+                style={{
+                    position: 'absolute'
+                }}> 
                 <div className="d-flex justify-content-between align-items-center w-100 mt-1 pb-3">
                     <h1 className=" mx-4 flex-1 text-xl sm:text-2xl text-white">{props.titulo}</h1>
 

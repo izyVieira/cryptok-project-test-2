@@ -18,6 +18,12 @@ let BuyToken = () => {
                     paddingTop: '80px',
                 }}>
 
+                <VisualTopo 
+                    tipo='1' 
+                    titulo='Buy BTC/USDT'
+                    caminhoVoltar='/sis/tokenDetailPage2'
+                />
+
                 <div 
                     className="rounded-2 flex-1 flex flex-col justify-center items-center sm:py-8 sm:px-4" 
                     data-bs-spy="scroll" 
@@ -27,7 +33,6 @@ let BuyToken = () => {
                         overflowY: 'auto',
                     }}>
 
-                    <VisualTopo tipo='1' titulo='Buy BTC/USDT'/>
 
                     <div className='bg-white' style={{
                         borderRadius: '20px',
@@ -62,7 +67,7 @@ let BuyToken = () => {
 
                         </div>
 
-                        <div className="d-flex justify-content-between w-100 px-4">
+                        <div className="d-flex justify-content-between w-100 px-4 my-4">
 
                             <div className="d-flex">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -106,7 +111,7 @@ let BuyToken = () => {
                             Detail Prince
                         </h3>
 
-                        <div className='flex'>
+                        <div className='flex mt-4'>
 
                             <p     
                                 style={{
@@ -131,7 +136,7 @@ let BuyToken = () => {
 
                         </div>
 
-                        <div className='flex'>
+                        <div className='flex my-4'>
 
                             <p     
                                 style={{
@@ -156,7 +161,7 @@ let BuyToken = () => {
 
                         </div>
 
-                        <div className='flex'>
+                        <div className='flex my-4'>
 
                             <p     
                                 style={{
@@ -181,7 +186,7 @@ let BuyToken = () => {
 
                         </div>
 
-                        <div className='flex'>
+                        <div className='flex my-4'>
 
                             <p     
                                 style={{
@@ -206,7 +211,7 @@ let BuyToken = () => {
 
                         </div>
 
-                        <div className='flex'>
+                        <div className='flex '>
 
                             <p     
                                 style={{
@@ -237,7 +242,10 @@ let BuyToken = () => {
                     <br/><br/><br/>
                 </div>
                 
-                <Botao titulo='Confirmation'/>
+                <Botao 
+                    titulo='Confirmation'
+                    caminho='/sis/buyTokenPage2'
+                    />
             
             </div>
             

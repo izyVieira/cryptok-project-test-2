@@ -66,7 +66,7 @@ let NavBar = () => {
             </div>
             
             {isOpen && (
-            <div className="md:hidden bg-gray-800" id="mobile-menu">
+            <div className="bg-gray-800" id="mobile-menu">
                 <ul className="px-2 pt-2 pb-3 space-y-1 sm:px-3 overflow-y-auto">
                     <li className="relative group">
                         <a

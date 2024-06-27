@@ -14,7 +14,7 @@ let MarketPage1 = () => {
             
             <div className="min-h-screen flex flex-col w-full "
                 style={{
-                    // paddingTop: '50px'
+                    paddingTop: '50px'
                 }}>
                 <VisualTopo tipo='5' titulo='Market'/>
 

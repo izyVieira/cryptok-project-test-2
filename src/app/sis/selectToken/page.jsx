@@ -6,19 +6,21 @@ import Menu from '@/components/menu';
 import Lista from '@/components/lista';
 import VisualTopo from '@/components/visualTopo';
 
-const SelectToken = () => {
+let SelectToken = () => {
 
     return (
         <>
             <NavBar />
 
-            <div className="min-h-screen flex flex-col w-full"
+            <div className="min-h-screen bg-white flex flex-col w-full"
                 style={{
                     paddingTop: '90px'
                 }}>
 
+                <VisualTopo tipo='1' titulo='Select Token' caminhoVoltar='/sis/buyTokenPage2'/>
+
                 <div
-                    className="rounded-2 flex-1 bg-white flex flex-col justify-center items-center sm:py-8 sm:px-4"
+                    className="rounded-2 flex-1 bg-white flex flex-col  items-center sm:py-8 sm:px-4"
                     data-bs-spy="scroll"
                     data-bs-smooth-scroll="true"
                     tabIndex="0"
@@ -26,7 +28,6 @@ const SelectToken = () => {
                         overflowY: 'auto',
                     }}>
 
-                    <VisualTopo tipo='1' titulo='Select Token' />
 
                     <div className="relative ">
                         <div className="flex items-center rounded-full"
@@ -58,7 +59,7 @@ const SelectToken = () => {
                         </div>
                     </div>
 
-                    <Lista />
+                    <Lista styleNone/>
 
                 </div>
 

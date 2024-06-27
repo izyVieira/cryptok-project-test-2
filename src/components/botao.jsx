@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 
 let Botao = (props) => {
@@ -16,7 +17,9 @@ let Botao = (props) => {
                         fontWeight: 600
                     }}
                 >
-                    {props.titulo}
+                    <a href={props.caminho}>
+                        <span>{props.titulo}</span>
+                    </a>
                 </button>
 
             </div>

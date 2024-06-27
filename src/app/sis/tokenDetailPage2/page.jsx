@@ -13,12 +13,16 @@ let TokenDatailPage2 = () => {
         <>
             <NavBar />
             
-            <div className="min-h-screen flex flex-col w-full border border-danger"
+            <div className="min-h-screen flex bg-white flex-col w-full "
                 style={{
                     paddingTop: '80px',
                 }}>
 
-                <VisualTopo tipo='4' titulo='BTC/USDT'/>
+                <VisualTopo 
+                    tipo='4' 
+                    titulo='BTC/USDT'
+                    caminhoVoltar='/sis/tokenDetail'
+                />
                 <div 
                     className="rounded-2 flex-1 bg-white flex flex-col justify-center items-center sm:py-8 sm:px-4" 
                     data-bs-spy="scroll" 
@@ -184,7 +188,10 @@ let TokenDatailPage2 = () => {
                     <br/><br/><br/><br/><br/>
                 </div>
                 
-                <Botao titulo='Buy BTC'/>
+                <Botao 
+                    caminho='/sis/buyToken'
+                    titulo='Buy BTC'
+                />
             
             </div>
             

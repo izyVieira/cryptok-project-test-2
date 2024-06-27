@@ -6,21 +6,21 @@ import VisualTopo from '@/components/visualTopo';
 
 let EnterOtp = () => {
 
-    const [resendMessageVisible, setResendMessageVisible] = useState(false);
-    const [showModal, setShowModal] = useState(false);
+    let [resendMessageVisible, setResendMessageVisible] = useState(false);
+    let [showModal, setShowModal] = useState(false);
 
-    const handleResendClick = () => {
+    let handleResendClick = () => {
         setResendMessageVisible(true);
         setTimeout(() => {
             setResendMessageVisible(false);
         }, 3000); 
     };
 
-    const handleContinueClick = () => {
+    let handleContinueClick = () => {
         setShowModal(true);
     };
 
-    const handleCloseModal = () => {
+    let handleCloseModal = () => {
         setShowModal(false);
     };
 

@@ -5,18 +5,22 @@ import VisualTopo from '@/components/visualTopo';
 
 export default function Home() {
 
-    const [showPassword, setShowPassword] = useState(false);
+    let [showPassword, setShowPassword] = useState(false);
 
-    const togglePasswordVisibility = () => {
+    let togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
     };
 
     return (
         <>
             <NavBar />
-            <div className="min-h-screen pt-16 flex flex-col w-full">
-                <VisualTopo />
-                <div className="flex-1 bg-white flex flex-col justify-center items-center  sm:py-8 sm:px-4">
+            <div className="min-h-screen bg-white pt-16 flex flex-col w-full">
+
+                <VisualTopo 
+                    caminhoVoltar='/sis/password/forgotPassword'
+                />
+
+                <div className="flex-1 bg-white flex flex-col  items-center  sm:py-8 sm:px-4" style={{marginTop: '-25px'}}>
 
                     <div className="text-account text-center p-5">
                         <h5 className="title-account "  style={{fontSize: '24px'}}>Create a </h5>

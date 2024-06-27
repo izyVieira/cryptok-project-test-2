@@ -7,9 +7,9 @@ import Link from 'next/link';
 
 
 let signEmail = () => {
-    const [showPassword, setShowPassword] = useState(false);
+    let [showPassword, setShowPassword] = useState(false);
 
-    const togglePasswordVisibility = () => {
+    let togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
     };
 
@@ -19,7 +19,12 @@ let signEmail = () => {
         <div className="min-h-screen pt-16 flex flex-col w-full">
     
 
-        <VisualTopo tipo='1' titulo='Sign In'/>
+        <VisualTopo 
+            tipo='1' 
+            titulo='Sign In'
+            bg={true}
+            caminhoVoltar='/sis/login'
+        />
 
         <div className="flex-1 bg-white flex flex-col justify-center items-center py-4 px-4 sm:py-8 sm:px-4">
             <div className="w-full max-w-xs">
@@ -85,7 +90,10 @@ let signEmail = () => {
                         borderRadius: '24px',
                     }}
                 >
-                    Sign In
+                    <Link href={'/sis/home/homePage'}>
+                        <span>Sign In</span>
+                    </Link>
+                    
                 </button>
            
                 <div className="flex items-center my-4">

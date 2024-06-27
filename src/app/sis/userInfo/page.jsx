@@ -14,12 +14,12 @@ let UserInfo = () => {
         <>
             <NavBar />
             
-            <div className="min-h-screen flex flex-col w-full "
+            <div className="min-h-screen bg-white flex flex-col w-full "
                 style={{
                     paddingTop: '90px'
                 }}>
 
-                <VisualTopo tipo='1' titulo='Setting'/>
+                <VisualTopo tipo='1' titulo='Setting' caminhoVoltar='/sis/profile'/>
                 
                 <div 
                     className="rounded-2 flex-1 bg-white flex flex-col justify-center items-center sm:py-8 sm:px-4" 

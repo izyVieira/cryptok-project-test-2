@@ -13,22 +13,25 @@ let TokenDetail = () => {
         <>
             <NavBar />
             
-            <div className="min-h-screen flex flex-col w-full"
+            <div className="min-h-screen bg-white flex flex-col w-full"
                 style={{
                     paddingTop: '80px',
                 }}>
 
-                <VisualTopo tipo='4' titulo='BTC/USDT'/>
+                <VisualTopo 
+                    tipo='4' 
+                    titulo='BTC/USDT'
+                    caminhoVoltar='/sis/marketPage2'
+                />
                 
                 <div 
-                    className="rounded-2 flex-1 bg-white flex flex-col justify-center items-center sm:py-8 sm:px-4" 
+                    className="rounded-2 flex-1  flex flex-col justify-center items-center sm:py-8 sm:px-4" 
                     data-bs-spy="scroll" 
                     data-bs-smooth-scroll="true" 
                     tabindex="0"
                     style={{
                         overflowY: 'auto',
                     }}>
-
                     
                     <div className="relative flex flex-col justify-center items-center">
                         <svg className="relative -top-0" xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
@@ -159,7 +162,10 @@ let TokenDetail = () => {
                     <br/><br/><br/>
                 </div>
                 
-                <Botao titulo='Buy BTC'/>
+                <Botao 
+                    caminho='/sis/buyToken'
+                    titulo='Buy BTC'
+                />
             
             </div>
             

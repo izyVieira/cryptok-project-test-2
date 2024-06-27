@@ -8,7 +8,7 @@ let createAccount = () => {
     return (
         <>
             <NavBar/>
-            <div className="min-h-screen pt-16 flex flex-col w-100">
+            <div className="min-h-screen pt-16 flex bg-blue-600 flex-col w-100">
 
                 <div className="flex-1 bg-blue-600 text-white flex flex-col justify-center items-center p-8">
                     <h5 className="text-3xl md:text-4xl text-center"
@@ -26,7 +26,7 @@ let createAccount = () => {
                     </p>
                 </div>
 
-                <div className="flex-1 bg-white flex flex-col justify-center items-center py-8 px-4">
+                <div className="flex-1 bg-white flex rounded-top-5 flex-col justify-center items-center py-8 px-4">
                     <div className="w-full max-w-xs">
                         <span className="block text-gray-700 mb-2">Email</span>
                         <input
@@ -48,7 +48,10 @@ let createAccount = () => {
                                 borderRadius: '24px',
                             }}
                         >
-                            Continue with Email
+                            <Link href={'/sis/createAccountEmail'}>
+                                <span>Continue with Email</span>
+                            </Link>
+                            
                         </button>
 
                         <div className="flex items-center my-4">

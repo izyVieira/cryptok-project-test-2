@@ -16,10 +16,16 @@ let BuyTokenPage2 = () => {
             <div className="min-h-screen flex flex-col w-full "
                 style={{
                     paddingBottom: '135px',
+                    paddingTop: '80px'
                 }}>
 
+                <VisualTopo 
+                    caminhoVoltar='/sis/buyToken'
+                    tipo='1' 
+                    titulo='Buy BTC/USDT'
+                />
                 <div 
-                    className="rounded-2 flex-1 flex flex-col justify-center items-center sm:py-8 sm:px-4" 
+                    className="rounded-2 flex-1 flex flex-col  items-center sm:py-8 sm:px-4" 
                     data-bs-spy="scroll" 
                     data-bs-smooth-scroll="true" 
                     tabindex="0"
@@ -27,7 +33,6 @@ let BuyTokenPage2 = () => {
                         overflowY: 'auto',
                     }}>
 
-                    <VisualTopo tipo='1' titulo='Buy BTC/USDT'/>
 
                     <div 
                         style={{
@@ -261,7 +266,7 @@ let BuyTokenPage2 = () => {
                                         display: 'flex',
                                         alignItems: 'center',
                                         justifyContent: 'flex-start',
-                                        gap: '5px' // Espaçamento entre os elementos filhos
+                                        gap: '5px' 
                                     }}>
                                     <div style={{ marginRight: '5px' }}>
                                         <p className=''
@@ -297,7 +302,10 @@ let BuyTokenPage2 = () => {
                 </div>
 
                
-                <Botao titulo='Confirmation'/>
+                <Botao 
+                    titulo='Confirmation'
+                    caminho='/sis/paymentPage1'
+                />
             
             </div>
             

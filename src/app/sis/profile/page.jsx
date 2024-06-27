@@ -6,19 +6,18 @@ import Menu from '@/components/menu';
 import VisualTopo from '@/components/visualTopo';
 import Link from 'next/link';
 
-
 let FavoritePage1 = () => {
 
     return (
         <>
             <NavBar />
             
-            <div className="min-h-screen flex flex-col w-full bg-white"
+            <div className="min-h-screen flex bg-white flex-col w-full bg-white"
                 style={{
                     paddingTop: '90px'
                 }}>
 
-                <VisualTopo tipo='1' titulo='Setting'/>
+                <VisualTopo tipo='1' titulo='Setting' caminhoVoltar='/sis/profile'/>
                 
                 <div 
                     className="rounded-2 flex-1 bg-white flex flex-col  items-center sm:py-8 sm:px-4" 
@@ -327,7 +326,7 @@ let FavoritePage1 = () => {
                                 General
                             </h3>
 
-                            <Link href="/sis/languenge2" 
+                            <Link href="/sis/languange2" 
                                 style={{  
                                     textDecoration: 'none',
                                     display: 'flex',
@@ -543,6 +542,7 @@ let FavoritePage1 = () => {
                         <div className="text-center flex justify-center items-center my-5">
                             <button
                                 className="w-full text-blue-600 rounded-lg p-2.5"
+                                 data-bs-toggle="modal" data-bs-target="#exampleModal"
                                 style={{
                                     maxWidth: "327px",
                                     height: "52px",
@@ -555,6 +555,35 @@ let FavoritePage1 = () => {
                             >
                                 Log Out
                             </button>
+                        </div>
+        
+                        <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div className="modal-dialog modal-dialog-centered">
+                                <div className="modal-content">
+                                <div className="modal-header">
+                                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div className="modal-body">
+                                    <p className="text-lg font-bold mb-4 text-center">Are you sure you want to logout?</p>
+                                    <div className="flex justify-center space-x-4">
+                                        <button 
+                                        data-bs-dismiss="modal"
+                                        className="bg-blue-600 text-white rounded-lg px-4 py-2 hover:bg-blue-700 focus:outline-none">
+                                            Cancel
+                                        </button>
+                                    </div>
+                                    <div className="flex justify-center space-x-4">
+                                        <button className="bg-white text-red-600 font-bold rounded-lg px-4 py-2 hover:underline"
+                                        data-bs-dismiss="modal">                                       
+                                            <Link href={'/sis/login'}>
+                                                <span>Log out</span>
+                                            </Link>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                </div>
+                            </div>
                         </div>
 
                     </div>         

@@ -3,11 +3,11 @@ import { useState } from 'react';
 import NavBar from "@/components/navBar";
 import VisualTopo from '@/components/visualTopo';
 
-const Termos = () => {
+let Termos = () => {
 
-    const [selectedLanguage, setSelectedLanguage] = useState('');
+    let [selectedLanguage, setSelectedLanguage] = useState('');
 
-    const handleLanguageChange = (event) => {
+    let handleLanguageChange = (event) => {
         setSelectedLanguage(event.target.value);
     };
 
@@ -15,13 +15,15 @@ const Termos = () => {
         <>
             <NavBar />
             
-            <div className="min-h-screen flex flex-col">
+            <div className="min-h-screen flex flex-col" style={{
+                paddingTop: '80px'
+            }}>
                 
-                <VisualTopo tipo='1' titulo='Language'/>  
+                <VisualTopo tipo='1' titulo='Language' caminhoVoltar='/sis/profile'/>  
 
                 <div 
                     className="flex-1 flex flex-col items-center  mt-8 px-4"
-                    style={{ maxWidth: '800px', margin: 'auto', paddingTop: '130px'}} 
+                    style={{ maxWidth: '800px', margin: 'auto', }} 
                 >
                     <div className="border border-gray-100 rounded-lg p-6 mb-4"
                         style={{width: '327px', height: '217px'}} >
