@@ -296,12 +296,31 @@ let NavBar = () => {
 
                                 <li>
                                     <a
+                                        href="/sis/paymentPage2"
+                                        className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                       Payment Page 2
+                                    </a>
+                                </li> 
+
+                                <li>
+                                    <a
+                                        href="/sis/paymentMethodPage1"
+                                        className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
+                                    >
+                                       Payment Method Page 1
+                                    </a>
+                                </li> 
+
+                                 <li>
+                                    <a
                                         href="/sis/paymentMethod"
                                         className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
                                     >
-                                       Payment Method
+                                       Payment Method Page 2
                                     </a>
                                 </li> 
+
 
                                 <li>
                                     <a
