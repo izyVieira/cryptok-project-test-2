@@ -17,7 +17,7 @@ let MarketPage1 = () => {
                     paddingTop: '90px'
                 }}>
 
-                <VisualTopo tipo='3' titulo='Market'/>
+                <VisualTopo tipo='3' titulo='Market' caminhoVoltar='/sis/portfolio-page2'/>
                 <div 
                     className="rounded-2 flex-1 bg-white flex flex-col justify-center items-center sm:py-8 sm:px-4" 
                     data-bs-spy="scroll" 

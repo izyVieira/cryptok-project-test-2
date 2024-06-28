@@ -109,10 +109,10 @@ let PaymentPage1 = () => {
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25v-1.5A2.25 2.25 0 014.5 4.5h15a2.25 2.25 0 012.25 2.25v1.5M2.25 8.25h19.5M2.25 8.25h19.5v9a2.25 2.25 0 01-2.25 2.25h-15A2.25 2.25 0 012.25 17.25v-9z" />
                                     </svg>
                                 </div>
-                                <div>
+                                <a href='/sis/paymentMethodPage1'>
                                     <div class="font-medium text-gray-900">DBS Bank Ltd</div>
                                     <div class="text-sm text-gray-500">**** 7265</div>
-                                </div>
+                                </a>
                             </div>
                             <button class="p-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-gray-500">
@@ -125,7 +125,7 @@ let PaymentPage1 = () => {
 
                 </div>
 
-                <Botao titulo='Continue' caminho='/sis/paymentMethod'/>
+                <Botao titulo='Continue' caminho='/sis/paymentPage2'/>
             
             </div>
             

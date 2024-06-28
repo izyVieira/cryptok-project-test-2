@@ -17,7 +17,7 @@ let FavoritePage2 = () => {
                     paddingTop: '50px'
                 }}>
 
-                <VisualTopo tipo='5' titulo='Market'/>
+                <VisualTopo tipo='5' titulo='Market' caminhoVoltar='/sis/favoritePage1'/>
 
                 <div 
                     className="flex-1 rounded-bottom-4 flex flex-col justify-center items-center sm:py-8 sm:px-4"

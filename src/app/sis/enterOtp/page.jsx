@@ -28,7 +28,7 @@ let EnterOtp = () => {
         <>
             <NavBar />
             <div className="min-h-screen pt-16 flex flex-col w-full">
-                <VisualTopo />
+                <VisualTopo caminhoVoltar='/sis/createAccountEmail'/>
                 <div className="flex-1 bg-white flex flex-col justify-between items-center py-4 px-4 sm:py-8 sm:px-4">
 
                     <div className="text-account text-center mt-8">

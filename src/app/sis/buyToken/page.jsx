@@ -239,7 +239,7 @@ let BuyToken = () => {
                     </div>
                    
                     
-                    <br/><br/><br/>
+                    <br/><br/>
                 </div>
                 
                 <Botao 

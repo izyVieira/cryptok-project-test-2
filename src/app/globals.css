@@ -99,6 +99,37 @@ body {
   background-color: #201f30;
 }
 
+.radio-hidden {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.custom-radio {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #f3f6fb;
+    display: inline-block;
+    position: relative;
+    border: 2px solid #111;
+}
+.radio-hidden:checked + .custom-radio {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.radio-hidden:checked + .custom-radio::after {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 
 

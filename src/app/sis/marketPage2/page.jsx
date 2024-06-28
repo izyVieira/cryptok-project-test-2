@@ -6,7 +6,7 @@ import Menu from '@/components/menu';
 import Lista from '@/components/lista';
 import VisualTopo from '@/components/visualTopo';
 
-let MarketPage1 = () => {
+let MarketPage2 = () => {
 
     return (
         <>
@@ -16,7 +16,7 @@ let MarketPage1 = () => {
                 style={{
                     paddingTop: '50px'
                 }}>
-                <VisualTopo tipo='5' titulo='Market'/>
+                <VisualTopo tipo='5' titulo='Market' caminhoVoltar='/sis/marketPage1'/>
 
                 <div 
                     className="flex-1 rounded-5 rounded-top-0 flex flex-col justify-center items-center sm:py-8 sm:px-4"
@@ -165,4 +165,4 @@ let MarketPage1 = () => {
     );
 }
 
-export default MarketPage1
+export default MarketPage2
