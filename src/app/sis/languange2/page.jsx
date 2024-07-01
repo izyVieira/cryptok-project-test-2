@@ -15,7 +15,7 @@ let Termos = () => {
         <>
             {/* <NavBar /> */}
             
-            <div className="min-h-screen flex flex-col visualTablet border-tablet " s
+            <div className="flex flex-col visualTablet border-tablet " s
             >
                 
                 <VisualTopo tipo='1' titulo='Language' caminhoVoltar='/sis/profile'/>  
@@ -465,6 +465,8 @@ let Termos = () => {
                     </div>
                     
                 </div>
+
+                <div class="overlay borderPhone"></div>
                 
             </div>
             

@@ -13,7 +13,7 @@ let BuyToken = () => {
         <>
             {/* <NavBar /> */}
             
-            <div className="min-h-screen flex flex-col w-full visualTablet border-tablet"
+            <div className="flex flex-col w-full visualTablet border-tablet"
                 style={{
                     // paddingTop: '80px',
                 }}>
@@ -245,7 +245,9 @@ let BuyToken = () => {
                 <Botao 
                     titulo='Confirmation'
                     caminho='/sis/buyTokenPage2'
-                    />
+                />
+
+                <div class="overlay borderPhone"></div>
             
             </div>
             

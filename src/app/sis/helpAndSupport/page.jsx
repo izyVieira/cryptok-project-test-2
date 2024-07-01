@@ -8,7 +8,7 @@ let HelpAndSupport = () => {
         <>
             {/* <NavBar /> */}
 
-            <div className="min-h-screen flex flex-col bg-white w-full visualTablet border-tablet" 
+            <div className="flex flex-col bg-white w-full visualTablet border-tablet" 
                 style={{
                     // paddingTop: '90px'
                 }}>
@@ -165,7 +165,7 @@ let HelpAndSupport = () => {
 
 
                 </div>
-
+                <div class="overlay borderPhone"></div>
             </div>
 
         </>

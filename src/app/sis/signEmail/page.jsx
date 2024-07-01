@@ -16,7 +16,7 @@ let signEmail = () => {
   return (
     <>
         {/* <NavBar/> */}
-        <div className="min-h-screen flex flex-col w-full visualTablet border-tablet">
+        <div className="flex flex-col w-full visualTablet border-tablet">
     
             <VisualTopo 
                 tipo='1' 
@@ -113,6 +113,7 @@ let signEmail = () => {
                 </p>
                     </div>
                 </div>
+                <div class="overlay borderPhone"></div>
             </div>
         </>
     );

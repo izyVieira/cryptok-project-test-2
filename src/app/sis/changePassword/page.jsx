@@ -18,11 +18,10 @@ let ChangePassword = () => {
         let newPassword = e.target.value;
         setPassword(newPassword);
 
-        // Validar a senha
+
         let hasValidLength = newPassword.length >= 8;
         let hasSpecialCharacter = /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/.test(newPassword);
         
-        // Definir validade da senha
         setPasswordValid(hasValidLength && hasSpecialCharacter);
     };
 
@@ -30,7 +29,7 @@ let ChangePassword = () => {
         <>
             {/* <NavBar /> */}
             
-            <div className="min-h-screen flex bg-white flex-col w-full visualTablet border-tablet"
+            <div className="flex bg-white flex-col w-full visualTablet border-tablet"
                 style={{
                     // paddingBottom: '45px',
                     // paddingTop: '80px'
@@ -193,7 +192,7 @@ let ChangePassword = () => {
                 </div>
 
                 <Botao titulo='Submit'/>
-            
+                <div class="overlay borderPhone"></div>
             </div>
             
         </>

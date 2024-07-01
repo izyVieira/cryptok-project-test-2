@@ -13,7 +13,7 @@ let Transfer = () => {
         <>
             {/* <NavBar /> */}
 
-            <div className="min-h-screen bg-white flex flex-col w-full visualTablet border-tablet"
+            <div className="bg-white flex flex-col w-full visualTablet border-tablet"
                 style={{
                     // paddingTop: '90px'
                 }}>
@@ -64,10 +64,8 @@ let Transfer = () => {
 
                 </div>
 
-                <Botao titulo='Avançar' caminho='/sis/selectContact'>
-
-                </Botao>
-
+                <Botao titulo='Avançar' caminho='/sis/selectContact'></Botao>
+                <div class="overlay borderPhone"></div>
             </div>
 
         </>

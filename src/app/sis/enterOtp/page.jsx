@@ -19,8 +19,8 @@ let EnterOtp = () => {
 
     return (
         <>
-            <NavBar />
-            <div className="min-h-screen pt-16 flex bg-white flex-col w-full visualTablet border-tablet">
+            {/* <NavBar /> */}
+            <div className="flex bg-white flex-col w-full visualTablet border-tablet">
                 <VisualTopo caminhoVoltar='/sis/createAccountEmail'/>
                 <div className="flex-1 bg-white flex flex-col justify-between items-center py-4 px-4 sm:py-8 sm:px-4">
 
@@ -60,8 +60,10 @@ let EnterOtp = () => {
                        
                     </p>
 
-                     
                 </div>
+
+                <div class="overlay borderPhone"></div>
+                
             </div>
 
         </>

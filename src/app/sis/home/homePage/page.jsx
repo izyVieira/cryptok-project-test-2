@@ -12,9 +12,9 @@ let HomePage = () => {
 
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
             
-            <div className="min-h-screen flex flex-col w-full visualTablet border-tablet">
+            <div className=" flex flex-col w-full visualTablet border-tablet">
 
                 <div 
                     className="flex-1 rounded-5 rounded-top-0 flex flex-col justify-center items-center sm:py-8 sm:px-4"
@@ -88,7 +88,7 @@ let HomePage = () => {
                                         fontSize: '12px', 
                                         color: '#D1D8DD'
                                     }}>
-                                    Your Balance
+                                    Total de Vendas
                                 </div>
 
                                 <div 
@@ -163,7 +163,7 @@ let HomePage = () => {
                                 <circle cx="20" cy="20" r="19.5" stroke="#FEFEFE"/>
                                 <path d="M14 12H26V14H14V12ZM19 22V28H21V22H26L20 16L14 22H19Z" fill="#FEFEFE"/>
                             </svg>
-                            <p className="button-label mt-2" style={{fontSize: '12px'}}>Send</p>
+                            <p className="button-label mt-2" style={{fontSize: '12px'}}>Finan</p>
                         </a>
 
                         <a href='/sis/buyTokenPage2' 
@@ -177,7 +177,7 @@ let HomePage = () => {
                             </svg>
 
                             <p className="button-label mt-2" style={{fontSize: '12px'}}>
-                                Exchange
+                                X
                             </p>
                         </a>
 
@@ -187,7 +187,7 @@ let HomePage = () => {
                                 <circle cx="20.5" cy="20" r="19.5" stroke="#FEFEFE"/>
                             </svg>
 
-                            <p className="button-label mt-2" style={{fontSize: '12px'}}>Receive</p>
+                            <p className="button-label mt-2" style={{fontSize: '12px'}}>Store</p>
                         </a>
 
                         <a  href='/sis/buyToken'
@@ -203,7 +203,7 @@ let HomePage = () => {
                                 <path d="M25.31 23H18.67L14.18 12.23C14.0278 11.8651 13.7708 11.5534 13.4415 11.3345C13.1122 11.1156 12.7254 10.9992 12.33 11H10V13H12.33L17.08 24.38C17.155 24.5626 17.2824 24.719 17.4461 24.8293C17.6099 24.9396 17.8026 24.999 18 25H26C26.2014 24.9994 26.398 24.938 26.564 24.8238C26.7299 24.7096 26.8575 24.5479 26.93 24.36L29.76 17H27.62L25.31 23Z" fill="#FEFEFE"/>
                             </svg>
 
-                            <p className="button-label mt-2" style={{fontSize: '12px'}}>Buy</p>
+                            <p className="button-label mt-2" style={{fontSize: '12px'}}>Manager</p>
                         </a>
 
                     </div>
@@ -365,11 +365,11 @@ let HomePage = () => {
                         </div>
 
                     </div>
+                    <Menu tela='home'/>
                 </div>
    
             
-                <Menu tela='home'/>
-            
+                <div class="overlay borderPhone"></div>
             </div>
             
         </>

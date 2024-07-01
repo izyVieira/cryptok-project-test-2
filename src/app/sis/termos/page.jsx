@@ -14,12 +14,12 @@ let Termos = () => {
         <>
             {/* <NavBar /> */}
             
-            <div className="min-h-screen flex flex-col bg-white visualTablet border-tablet">
+            <div className="flex flex-col bg-white visualTablet border-tablet">
                 
                 <VisualTopo tipo='1' titulo='Legal and Policies' caminhoVoltar='/sis/profile'/>  
 
                 <div 
-                    className="flex-1 flex flex-col items-center "
+                    className="flex-1 flex flex-col items-center p-5"
                     style={{ maxWidth: '800px', margin: 'auto', }} 
                 >
                     <div className="rounded-lg ">
@@ -60,7 +60,7 @@ let Termos = () => {
                     </div>
                     
                 </div>
-                
+                <div class="overlay borderPhone"></div>
             </div>
             
         </>

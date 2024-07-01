@@ -14,7 +14,7 @@ let PaymentPage2 = () => {
         <>
             {/* <NavBar /> */}
             
-            <div className="min-h-screen flex flex-col bg-white w-full visualTablet border-tablet"
+            <div className="flex flex-col bg-white w-full visualTablet border-tablet"
                 style={{
                     // paddingBottom: '45px',
                     // paddingTop: '80px'

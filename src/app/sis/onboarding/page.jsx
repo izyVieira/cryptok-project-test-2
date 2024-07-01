@@ -240,45 +240,47 @@ let Onboarding = () => {
                         </defs> 
                     </svg>
 
-                    <h1 className="text-center text-2xl font-bold mt-4">
-                        {pages[currentPage - 1].title}
-                    </h1>
+                    <div className="flex flex-col items-center justify-center">
+                        <h1 className="text-center text-2xl font-bold mt-4">
+                            {pages[currentPage - 1].title}
+                        </h1>
 
-                    <p className="text-center text-gray-600 mt-2">
-                        {pages[currentPage - 1].description}
-                    </p>
+                        <p className="text-center text-gray-600 mt-2">
+                            {pages[currentPage - 1].description}
+                        </p>
 
-                    <a
-                        href="/sis/signEmail"
-                        className="bg-blue-600 text-white px-4 py-2 rounded-full mt-4 block text-center"
-                        style={{
-                            width: '327px',
-                            textDecoration: 'none',
-                        }}
-                    >
-                        Get Started
-                    </a>
-
-                    <p
-                        className="mt-2"
-                        style={{
-                            color: "#78828A",
-                            fontWeight: "700",
-                        }}
-                        >
-                        Don't have an account?{" "}
                         <a
-                            href="/sis/createAccountEmail"
-                            className="text-blue-600"
+                            href="/sis/signEmail"
+                            className="bg-blue-600 text-white px-4 py-2 rounded-full mt-4 block text-center"
                             style={{
-                            color: "#0354EA",
-                            textDecoration: "none",
-                            fontWeight: "700",
+                                width: '327px',
+                                textDecoration: 'none',
                             }}
                         >
-                        Register
+                            Get Started
                         </a>
-                    </p>
+
+                        <p
+                            className="mt-2 text-center"
+                            style={{
+                                color: "#78828A",
+                                fontWeight: "700",
+                            }}
+                        >
+                            Don't have an account?{" "}
+                            <a
+                                href="/sis/createAccountEmail"
+                                className="text-blue-600"
+                                style={{
+                                    color: "#0354EA",
+                                    textDecoration: "none",
+                                    fontWeight: "700",
+                                }}
+                            >
+                                Register
+                            </a>
+                        </p>
+                    </div>
 
                 </div>
             );
@@ -346,17 +348,19 @@ let Onboarding = () => {
     };
 
     return (
-        <div className="visualTablet border-tablet min-h-screen flex flex-col w-full" style={{
+        <div className="visualTablet border-tablet  flex flex-col w-full" style={{
                 overflow: 'hidden',
             }}>
                 {/* <NavBar /> */}
-            <div className="min-h-screen flex flex-col w-full" style={{
-                overflow: 'auto'
+            <div className=" flex flex-col w-full" style={{
+                overflow: 'auto',
+                padding: '20px 1%'
             }}>
                 <div className="flex-grow flex flex-col items-center justify-center p-4 mt-16">
                 <div className="max-w-md w-full">{renderContent()}</div>
                 </div>
             </div>
+            <div class="overlay borderPhone"></div>
         </div>
         
     );

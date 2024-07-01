@@ -13,7 +13,7 @@ let TokenDetail = () => {
         <>
             {/* <NavBar /> */}
             
-            <div className="min-h-screen bg-white flex flex-col w-full visualTablet border-tablet"
+            <div className="bg-white flex flex-col w-full visualTablet border-tablet"
                 style={{
                     // paddingTop: '80px',
                 }}>
@@ -166,7 +166,7 @@ let TokenDetail = () => {
                     caminho='/sis/buyToken'
                     titulo='Buy BTC'
                 />
-            
+                <div class="overlay borderPhone"></div>
             </div>
             
         </>

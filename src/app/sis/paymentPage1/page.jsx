@@ -14,7 +14,7 @@ let PaymentPage1 = () => {
         <>
             {/* <NavBar /> */}
             
-            <div className="min-h-screen flex flex-col bg-white w-full visualTablet border-tablet"
+            <div className="flex flex-col bg-white w-full visualTablet border-tablet"
                 style={{
                     // paddingBottom: '45px',
                     // paddingTop: '80px'
@@ -126,7 +126,7 @@ let PaymentPage1 = () => {
                 </div>
 
                 <Botao titulo='Continue' caminho='/sis/paymentPage2'/>
-            
+                <div class="overlay borderPhone"></div>           
             </div>
             
         </>

@@ -18,8 +18,8 @@ export default function Home() {
 
     return (
         <>
-            <NavBar />
-            <div className="min-h-screen bg-white pt-16 flex flex-col w-full visualTablet border-tablet">
+            {/* <NavBar /> */}
+            <div className="bg-white flex flex-col w-full visualTablet border-tablet">
 
                 <VisualTopo 
                     caminhoVoltar='/sis/password/forgotPassword'
@@ -112,6 +112,7 @@ export default function Home() {
                         </button>
                     </div> 
                 </div>
+                <div class="overlay borderPhone"></div>
             </div>
         </>
     );

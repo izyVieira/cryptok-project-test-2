@@ -14,7 +14,7 @@ let SelectContact = () => {
         <>
             {/* <NavBar /> */}
 
-            <div className="min-h-screen bg-white flex flex-col w-full visualTablet border-tablet"
+            <div className="bg-white flex flex-col w-full visualTablet border-tablet"
                 style={{
                     // paddingTop: '90px'
                 }}>
@@ -73,7 +73,7 @@ let SelectContact = () => {
                     </div>
 
                 </div>
-                
+                <div class="overlay borderPhone"></div>
             </div>
 
         </>

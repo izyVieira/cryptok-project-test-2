@@ -13,7 +13,7 @@ let PaymentMethod = () => {
         <>
             {/* <NavBar /> */}
             
-            <div className="min-h-screen flex flex-col w-full visualTablet border-tablet"
+            <div className="flex flex-col w-full visualTablet border-tablet"
                 style={{
                     // paddingBottom: '45px',
                     // paddingTop: '80px'
@@ -73,7 +73,7 @@ let PaymentMethod = () => {
                 </div>
 
                 <Botao titulo='Continue' caminho='/sis/manegeToken'/>
-            
+                <div class="overlay borderPhone"></div>            
             </div>
             
         </>

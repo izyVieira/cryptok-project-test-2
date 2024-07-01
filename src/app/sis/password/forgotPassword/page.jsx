@@ -14,8 +14,8 @@ export default function Home() {
 
     return (
         <>
-            <NavBar />
-            <div className="min-h-screen pt-16 bg-white flex flex-col w-full visualTablet border-tablet">
+
+            <div className="bg-white flex flex-col w-full visualTablet border-tablet">
 
                 <VisualTopo 
                     caminhoVoltar='/sis/signEmail'
@@ -56,6 +56,7 @@ export default function Home() {
                         </button>
                     </div> 
                 </div>
+                <div class="overlay borderPhone"></div>
             </div>
         </>
     );

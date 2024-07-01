@@ -20,7 +20,7 @@ export default function Home() {
         <>
             {/* <NavBar /> */}
             
-            <div className="min-h-screen flex flex-col visualTablet border-tablet">
+            <div className="flex flex-col visualTablet border-tablet">
 
                <div className="relative ">
                     <svg
@@ -300,8 +300,7 @@ export default function Home() {
                     )}
                 </div>
 
-                <div class="overlay borderTeste">
-                </div>
+                <div class="overlay borderPhone"></div>
 
             </div>
             

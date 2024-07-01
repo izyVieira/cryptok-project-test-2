@@ -11,9 +11,9 @@ let Portfolio = () => {
 
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
             
-            <div className="min-h-screen flex flex-col w-full visualTablet border-tablet">
+            <div className="flex flex-col w-full visualTablet border-tablet">
 
                 <div 
                     className="flex-1 rounded-5 rounded-top-0 flex flex-col justify-center items-center sm:py-8 sm:px-4"
@@ -124,7 +124,7 @@ let Portfolio = () => {
                     <Lista/>
                 </div>
 
-                <nav className="text-gray-700 p-4 bg-white shadow-top fixed bottom-0 left-0 w-full">
+                <nav className="text-gray-700 p-4 bg-white shadow-top absolute bottom-0 left-0 w-full">
                     <div className="text-center flex justify-center items-center">
                         <button
                             className="w-full text-white rounded-lg p-2.5 "

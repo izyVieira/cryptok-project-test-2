@@ -12,7 +12,7 @@ let Profile = () => {
         <>
             {/* <NavBar /> */}
             
-            <div className="min-h-screen flex bg-white flex-col w-full bg-white visualTablet border-tablet"
+            <div className="flex bg-white flex-col w-full bg-white visualTablet border-tablet"
                 style={{
                     // paddingTop: '90px'
                 }}>
@@ -549,7 +549,7 @@ let Profile = () => {
                 </div>
 
                 <Menu tela='profile'/>
-            
+                <div class="overlay borderPhone"></div>
             </div>
             
         </>

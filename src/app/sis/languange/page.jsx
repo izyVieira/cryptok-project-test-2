@@ -40,9 +40,9 @@ export default function Home() {
 
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
 
-            <div className="min-h-screen bg-white flex flex-col w-full visualTablet border-tablet">
+            <div className="bg-white flex flex-col w-full visualTablet border-tablet">
                 <div className="flex-1 relative flex flex-col items-center" style={{ marginTop: '150px' }}>
                     <div className="text-center">
                         <h5 className="font-bold" style={{ fontSize: '24px', fontWeight: 700 }}>
@@ -71,7 +71,7 @@ export default function Home() {
                             }}
                         />
                         {isModalOpen && (
-                            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+                            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
                                 style={{
                                     zIndex: 1050
                                 }}>
@@ -133,7 +133,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <nav className="text-gray-700 p-4 shadow-top fixed bottom-0 left-0 w-full">
+                <nav className="text-gray-700 p-4 shadow-top absolute bottom-0 left-0 w-full">
                     <div className="text-center flex justify-center items-center">
                         <button style={{
                             width: '325px',
@@ -146,6 +146,7 @@ export default function Home() {
                         </button>
                     </div>
                 </nav>
+                <div class="overlay borderPhone"></div>
             </div>
         </>
     );

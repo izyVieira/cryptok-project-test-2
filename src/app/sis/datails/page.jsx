@@ -263,7 +263,9 @@ let Datails = () => {
                 <Botao 
                     titulo='Confirmation'
                     caminho='/sis/buyTokenPage2'
-                    />
+                />
+
+                <div class="overlay borderPhone"></div>
             
             </div>
             

@@ -13,11 +13,9 @@ let Termos = () => {
     };
     return (
         <>
-            <NavBar />
+   
             
-            <div className="min-h-screen flex flex-col" style={{
-                paddingTop: '80px'
-            }}>
+            <div className="flex flex-col visualTablet border-tablet" >
                 
                 <VisualTopo tipo='1' titulo='Notifications' caminhoVoltar='/sis/home/homePage'/>  
 
@@ -129,7 +127,7 @@ let Termos = () => {
                     </div>
                     
                 </div>
-                
+                <div class="overlay borderPhone"></div>
             </div>
             
         </>

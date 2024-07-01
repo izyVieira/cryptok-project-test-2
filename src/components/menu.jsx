@@ -6,7 +6,7 @@ let Menu = (props) => {
     let router = useRouter()
 
     return (
-        <nav className="bg-white text-gray-700 p-4 shadow-top fixed bottom-0 left-0 w-full">
+        <nav className="bg-white text-gray-700 p-4 shadow-top absolute bottom-0 left-0 w-full">
             <div className="text-center flex justify-center items-center">
                 {/* home */}
                 <div className="text-center mx-4" 
