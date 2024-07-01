@@ -131,25 +131,33 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.visualTablet{
-    background-color: rgb(253, 253, 253);
-    max-width: 400px !important;
-    height: calc(100vh - 50px);
-    width: 100%;
-    margin: 0 auto;
-    /* margin: 50px 0; */
-}
-
 .border-tablet {
-    border: double 10px transparent;
-    border-radius: 10px;
-    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #3d518c 20%, #a1bee2 20%, #0b497f 66%, #a1bee2 80%, #3d518c 80%, #164166 100%);
+    border: 10px double transparent;
+    border-radius: 50px;
+    background-image: linear-gradient(#fff, #fff), radial-gradient(circle at top left, #3d518c 20%, #a1bee2 0, #0b497f 66%, #a1bee2 80%, #3d518c 0, #164166 100%);
     background-origin: border-box;
     background-clip: content-box, border-box;
     border-image-slice: 1;
     position: relative;
+    overflow: auto;
 }
 
+.borderTeste {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0.4rem solid black;
+  border-radius: 38px;
+  pointer-events: none;
+}
+
+.visualTablet {
+    background-color: #fdfdfd;
+    max-width: 400px !important;
+    height: calc(100vh - 50px);
+    width: 100%;
+    margin: 0 auto;
+}
 .visualTablet::before{
     content: '';
     position: absolute;
