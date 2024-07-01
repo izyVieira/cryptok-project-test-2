@@ -19,7 +19,7 @@ let Termos = () => {
                 paddingTop: '80px'
             }}>
                 
-                <VisualTopo tipo='1' titulo='Notifications' caminhoVoltar='/sis/profile'/>  
+                <VisualTopo tipo='1' titulo='Notifications' caminhoVoltar='/sis/home/homePage'/>  
 
                 <div 
                     className="flex-1 flex flex-col items-center mt-8 px-4"

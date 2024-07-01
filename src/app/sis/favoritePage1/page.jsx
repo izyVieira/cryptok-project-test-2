@@ -17,10 +17,10 @@ let FavoritePage1 = () => {
                     paddingTop: '90px'
                 }}>
 
-                <VisualTopo tipo='3' titulo='Market' caminhoVoltar='/sis/manegeToken'/>
+                <VisualTopo tipo='3' titulo='Favorite' caminhoVoltar='/sis/manegeToken'/>
                 
                 <div 
-                    className="rounded-2 flex-1 bg-white flex flex-col justify-center items-center sm:py-8 sm:px-4" 
+                    className="rounded-2 flex-1 bg-white flex flex-col  items-center sm:py-8 sm:px-4" 
                     data-bs-spy="scroll" 
                     data-bs-smooth-scroll="true" 
                     tabindex="0"
@@ -60,11 +60,11 @@ let FavoritePage1 = () => {
                     </div>
 
                 
-                    <Lista/>
+                    <Lista styleNone/>
 
                 </div>
 
-                <Menu/>
+                <Menu tela='favorite'/>
             
             </div>
             

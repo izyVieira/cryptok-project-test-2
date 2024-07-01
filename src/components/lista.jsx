@@ -3,8 +3,8 @@
 let Lista = (props) => {
 
     return (
-        <div className="mt-4 w-100" 
-            style={props.styleNone ? {} : { paddingBottom: '50px', height: '400px', overflowY: 'auto' }}>
+        <div className="mt-4 w-100 " 
+            style={props.styleNone ? {paddingBottom: '100px'} : { paddingBottom: '50px', height: '400px', overflowY: 'auto' }}>
 
             <div 
                 style={{

@@ -117,7 +117,7 @@ let FavoritePage2 = () => {
                     <Lista/>
                 </div>
 
-                <Menu/>
+                <Menu tela='favorite'/>
             </div>
         </>
     );

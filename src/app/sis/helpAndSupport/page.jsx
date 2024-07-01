@@ -1,12 +1,8 @@
 'use client'
-import { useState } from 'react';
 import NavBar from "@/components/navBar";
-import Image from "next/image";
-import Menu from '@/components/menu';
-import Lista from '@/components/lista';
 import VisualTopo from '@/components/visualTopo';
 
-let SelectToken = () => {
+let HelpAndSupport = () => {
 
     return (
         <>
@@ -84,9 +80,9 @@ let SelectToken = () => {
                                 <button 
                                     className="accordion-button collapsed" 
                                     type="button" data-bs-toggle="collapse" 
-                                    data-bs-target="#flush-collapseOne" 
+                                    data-bs-target="#flush-collapseTwo" 
                                     aria-expanded="false" 
-                                    aria-controls="flush-collapseOne"
+                                    aria-controls="flush-collapseTwo"
                                     style={{
                                         fontSize: '16px',
                                         fontWeight: 600
@@ -100,12 +96,13 @@ let SelectToken = () => {
                             </div>
                         </div>
                         <div className="accordion-item">
-                            <button 
+                            <h2 className="accordion-header">
+                                <button 
                                     className="accordion-button collapsed" 
                                     type="button" data-bs-toggle="collapse" 
-                                    data-bs-target="#flush-collapseOne" 
+                                    data-bs-target="#flush-collapseThree" 
                                     aria-expanded="false" 
-                                    aria-controls="flush-collapseOne"
+                                    aria-controls="flush-collapseThree"
                                     style={{
                                         fontSize: '16px',
                                         fontWeight: 600
@@ -113,6 +110,7 @@ let SelectToken = () => {
                                 >
                                     Lorem ipsum dolor sit amet
                                 </button>
+                            </h2>
                             <div id="flush-collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body">
                                     Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
@@ -120,12 +118,13 @@ let SelectToken = () => {
                             </div>
                         </div>
                         <div className="accordion-item">
-                            <button 
+                            <h2 className="accordion-header">
+                                <button 
                                     className="accordion-button collapsed" 
                                     type="button" data-bs-toggle="collapse" 
-                                    data-bs-target="#flush-collapseOne" 
+                                    data-bs-target="#flush-collapseFour" 
                                     aria-expanded="false" 
-                                    aria-controls="flush-collapseOne"
+                                    aria-controls="flush-collapseFour"
                                     style={{
                                         fontSize: '16px',
                                         fontWeight: 600
@@ -133,6 +132,7 @@ let SelectToken = () => {
                                 >
                                     Lorem ipsum dolor sit amet
                                 </button>
+                            </h2>
                             <div id="flush-collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body">
                                     Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> className. This is the fourth item's accordion body.
@@ -140,12 +140,13 @@ let SelectToken = () => {
                             </div>
                         </div>
                         <div className="accordion-item">
-                            <button 
+                            <h2 className="accordion-header">
+                                <button 
                                     className="accordion-button collapsed" 
                                     type="button" data-bs-toggle="collapse" 
-                                    data-bs-target="#flush-collapseOne" 
+                                    data-bs-target="#flush-collapseFive" 
                                     aria-expanded="false" 
-                                    aria-controls="flush-collapseOne"
+                                    aria-controls="flush-collapseFive"
                                     style={{
                                         fontSize: '16px',
                                         fontWeight: 600
@@ -153,6 +154,7 @@ let SelectToken = () => {
                                 >
                                     Lorem ipsum dolor sit amet
                                 </button>
+                            </h2>
                             <div id="flush-collapseFive" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div className="accordion-body">
                                     Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> className. This is the fifth item's accordion body.
@@ -170,4 +172,4 @@ let SelectToken = () => {
     );
 }
 
-export default SelectToken;
+export default HelpAndSupport;

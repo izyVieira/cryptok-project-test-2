@@ -39,7 +39,8 @@ let Termos = () => {
 
                         <div className="flex flex-col items-start space-y-4">
                             <div className="flex items-center justify-between w-full">
-                                <label htmlFor="englishUK" className="cursor-pointer flex items-center space-x-2 w-full">
+                                
+                                <label htmlFor="englishUK" className="cursor-pointer flex items-center space-x-2 w-full ">
                                     <input
                                         type="radio"
                                         id="englishUK"
@@ -79,6 +80,7 @@ let Termos = () => {
                                     )}
                                 </label>
                             </div>
+
                             <hr className="w-full border-gray-200" />
 
                             <div className="flex items-center justify-between w-full">

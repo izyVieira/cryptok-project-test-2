@@ -1,14 +1,9 @@
 'use client'
-import { useState } from 'react';
 import NavBar from "@/components/navBar";
 import Image from "next/image";
-import Menu from '@/components/menu';
 import VisualTopo from '@/components/visualTopo';
-import Link from 'next/link';
-
 
 let UserInfo = () => {
-
 
     return (
         <>
@@ -251,8 +246,6 @@ let UserInfo = () => {
                     </div>         
 
                 </div>
-
-                <Menu/>
             
             </div>
             

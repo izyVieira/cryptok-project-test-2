@@ -157,7 +157,7 @@ let MarketPage2 = () => {
 
                 </div>
 
-                <Menu/>
+                <Menu tela='market'/>
             
             </div>
             

@@ -4,9 +4,11 @@ import NavBar from "@/components/navBar";
 import Image from "next/image";
 import Menu from '@/components/menu';
 import Lista from '@/components/lista';
+import { useRouter } from 'next/navigation';
 
 let HomePage = () => {
 
+    let router = useRouter();
 
     return (
         <>
@@ -41,14 +43,16 @@ let HomePage = () => {
                             </div>
                         </div>
                         
-                        <div className='mx-4'>
+                        <a  href='/sis/notifications'
+                            className='mx-4'>
 
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 17.8476C17.6392 17.8476 20.2481 17.1242 20.5 14.2205C20.5 11.3188 18.6812 11.5054 18.6812 7.94511C18.6812 5.16414 16.0452 2 12 2C7.95477 2 5.31885 5.16414 5.31885 7.94511C5.31885 11.5054 3.5 11.3188 3.5 14.2205C3.75295 17.1352 6.36177 17.8476 12 17.8476Z" stroke="#FEFEFE" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                                 <path d="M14.3889 20.8572C13.0247 22.3719 10.8967 22.3899 9.51953 20.8572" stroke="#FEFEFE" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                                 <circle cx="17" cy="5" r="4" fill="#F41F52"/>
                             </svg>
-                        </div>
+
+                        </a>
 
                     </div>
 
@@ -154,33 +158,43 @@ let HomePage = () => {
                         className='relative flex justify-center' 
                         style={{ bottom: '-70px' }}>
 
-                        <div className="text-center">
+                        <a href='/sis/selectContact' className="text-center">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="20" cy="20" r="19.5" stroke="#FEFEFE"/>
                                 <path d="M14 12H26V14H14V12ZM19 22V28H21V22H26L20 16L14 22H19Z" fill="#FEFEFE"/>
                             </svg>
                             <p className="button-label mt-2" style={{fontSize: '12px'}}>Send</p>
-                        </div>
+                        </a>
 
-                        <div className="text-center ml-8">
+                        <a href='/sis/buyTokenPage2' 
+                            className="text-center ml-8" 
+                            onClick={() => {
+                                router.push('/sis/buyTokenPage2')
+                            }}>
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M27.9241 18.383C27.9998 18.2003 28.0196 17.9991 27.981 17.8051C27.9424 17.6111 27.847 17.4329 27.7071 17.293L22.7071 12.293L21.2931 13.707L24.5861 17H12.0001V19H27.0001C27.1979 19.0001 27.3912 18.9415 27.5557 18.8317C27.7202 18.7218 27.8484 18.5657 27.9241 18.383ZM12.0761 21.617C12.0004 21.7998 11.9806 22.0009 12.0192 22.195C12.0579 22.389 12.1532 22.5672 12.2931 22.707L17.2931 27.707L18.7071 26.293L15.4141 23H28.0001V21H13.0001C12.8023 20.9998 12.6089 21.0584 12.4444 21.1682C12.2799 21.2781 12.1517 21.4343 12.0761 21.617Z" fill="#FEFEFE"/>
                                 <circle cx="20" cy="20" r="19.5" stroke="#FEFEFE"/>
                             </svg>
 
-                            <p className="button-label mt-2" style={{fontSize: '12px'}}>Exchange</p>
-                        </div>
+                            <p className="button-label mt-2" style={{fontSize: '12px'}}>
+                                Exchange
+                            </p>
+                        </a>
 
-                        <div className="text-center ml-8">
+                        <a href='#' className="text-center ml-8">
                             <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14.5 26H26.5V28H14.5V26ZM19.5 12V18H14.5L20.5 24L26.5 18H21.5V12H19.5Z" fill="#FEFEFE"/>
                                 <circle cx="20.5" cy="20" r="19.5" stroke="#FEFEFE"/>
                             </svg>
 
                             <p className="button-label mt-2" style={{fontSize: '12px'}}>Receive</p>
-                        </div>
+                        </a>
 
-                        <div className="text-center ml-8">
+                        <a  href='/sis/buyToken'
+                            className="text-center ml-8" 
+                            onClick={() => {
+                                router.push('/sis/buyToken')
+                            }}>
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="20" cy="20" r="19.5" stroke="#FEFEFE"/>
                                 <path d="M18.5 29C19.3284 29 20 28.3284 20 27.5C20 26.6716 19.3284 26 18.5 26C17.6716 26 17 26.6716 17 27.5C17 28.3284 17.6716 29 18.5 29Z" fill="#FEFEFE"/>
@@ -190,7 +204,7 @@ let HomePage = () => {
                             </svg>
 
                             <p className="button-label mt-2" style={{fontSize: '12px'}}>Buy</p>
-                        </div>
+                        </a>
 
                     </div>
 
@@ -341,11 +355,11 @@ let HomePage = () => {
                         <h5 className="m-0">Trending</h5>
                     </div>
 
-                    <Lista/>
+                    <Lista styleNone/>
 
                 </div>
 
-                <Menu/>
+                <Menu tela='home'/>
             
             </div>
             
