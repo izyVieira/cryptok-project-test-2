@@ -1,20 +1,11 @@
 'use client'
-// import { useSearchParams } from 'next/navigation';
+
 import NavBar from "@/components/navBar";
 import Image from "next/image";
 import VisualTopo from '@/components/visualTopo';
 import Botao from '@/components/botao';
 
 let Datails = () => {
-    // let buscarDados = () => {
-    //     let searchParams = useSearchParams();
-
-    //     return {
-    //         nome: searchParams.get('nome'),
-    //         imgSrc: searchParams.get('imgSrc'),
-    //         codWallet: searchParams.get('codWallet')
-    //     }
-    // }
 
     return (
         <>
