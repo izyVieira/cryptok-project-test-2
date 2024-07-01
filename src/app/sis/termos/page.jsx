@@ -12,19 +12,17 @@ let Termos = () => {
 
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
             
-            <div className="min-h-screen flex flex-col" style={{
-                paddingTop: '80px'
-            }}>
+            <div className="min-h-screen flex flex-col bg-white visualTablet border-tablet">
                 
                 <VisualTopo tipo='1' titulo='Legal and Policies' caminhoVoltar='/sis/profile'/>  
 
                 <div 
-                    className="flex-1 flex flex-col items-center  mt-8 px-4"
-                    style={{ maxWidth: '800px', margin: 'auto',  }} 
+                    className="flex-1 flex flex-col items-center "
+                    style={{ maxWidth: '800px', margin: 'auto', }} 
                 >
-                    <div className="rounded-lg">
+                    <div className="rounded-lg ">
                         <h2 className="text-black text-lg mb-2">Terms</h2>
                         <div className="text-gray-600 text-sm">
                             <p>
@@ -37,7 +35,7 @@ let Termos = () => {
                     </div>
                     
                     <div className="rounded-lg ">
-                        <h2 className="text-black text-lg ">Changes to the Service and/or Terms</h2>
+                        <h2 className="text-black text-lg mt-2">Changes to the Service and/or Terms</h2>
                         <div className="text-gray-600 text-sm">
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ornare quam vel facilisis feugiat amet sagittis arcu, tortor. Sapien, consequat ultrices morbi orci semper sit nulla. Leo auctor ut etiam est, amet aliquet ut vivamus. Odio vulputate est id tincidunt fames.

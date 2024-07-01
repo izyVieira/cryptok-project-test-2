@@ -28,12 +28,12 @@ let ChangePassword = () => {
 
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
             
-            <div className="min-h-screen flex bg-white flex-col w-full "
+            <div className="min-h-screen flex bg-white flex-col w-full visualTablet border-tablet"
                 style={{
-                    paddingBottom: '45px',
-                    paddingTop: '80px'
+                    // paddingBottom: '45px',
+                    // paddingTop: '80px'
                 }}>
 
                 <VisualTopo tipo='1' titulo='Change Password' caminhoVoltar='/sis/profile'/>  
@@ -100,7 +100,7 @@ let ChangePassword = () => {
                                 </button>
                             </div>
 
-                            <div className="flex items-center mt-1">
+                            <div className="flex items-center mt-4">
                                 {password.length >= 8 ? (
                                     <>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -128,7 +128,7 @@ let ChangePassword = () => {
                             </div>
 
 
-                            <div className="flex items-center mt-1">
+                            <div className="flex items-center mb-4">
                                 {/[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/.test(password) ? (
                                     <>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">

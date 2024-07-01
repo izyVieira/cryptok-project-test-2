@@ -13,11 +13,9 @@ let Termos = () => {
     };
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
             
-            <div className="min-h-screen flex flex-col" style={{
-                paddingTop: '80px'
-            }}>
+            <div className="min-h-screen flex flex-col visualTablet border-tablet">
                 
                 <VisualTopo tipo='1' titulo='Security' caminhoVoltar='/sis/profile'/>  
 

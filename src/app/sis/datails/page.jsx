@@ -9,11 +9,11 @@ let Datails = () => {
 
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
             
-            <div className="min-h-screen flex flex-col w-full "
+            <div className="min-h-screen flex flex-col w-full visualTablet border-tablet"
                 style={{
-                    paddingTop: '80px',
+                    // paddingTop: '80px',
                 }}>
 
                 <VisualTopo 

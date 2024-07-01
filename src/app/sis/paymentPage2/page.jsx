@@ -12,12 +12,12 @@ let PaymentPage2 = () => {
 
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
             
-            <div className="min-h-screen flex flex-col bg-white w-full "
+            <div className="min-h-screen flex flex-col bg-white w-full visualTablet border-tablet"
                 style={{
-                    paddingBottom: '45px',
-                    paddingTop: '80px'
+                    // paddingBottom: '45px',
+                    // paddingTop: '80px'
                 }}>
 
                 <VisualTopo tipo='1' titulo='Payment' caminhoVoltar='/sis/paymentPage1'/>

@@ -19,7 +19,7 @@ export default function Home() {
     return (
         <>
             <NavBar />
-            <div className="min-h-screen bg-white pt-16 flex flex-col w-full">
+            <div className="min-h-screen bg-white pt-16 flex flex-col w-full visualTablet border-tablet">
 
                 <VisualTopo 
                     caminhoVoltar='/sis/password/forgotPassword'

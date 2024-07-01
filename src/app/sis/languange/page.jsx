@@ -42,7 +42,7 @@ export default function Home() {
         <>
             <NavBar />
 
-            <div className="min-h-screen bg-white flex flex-col w-full">
+            <div className="min-h-screen bg-white flex flex-col w-full visualTablet border-tablet">
                 <div className="flex-1 relative flex flex-col items-center" style={{ marginTop: '150px' }}>
                     <div className="text-center">
                         <h5 className="font-bold" style={{ fontSize: '24px', fontWeight: 700 }}>

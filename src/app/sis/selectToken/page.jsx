@@ -10,11 +10,11 @@ let SelectToken = () => {
 
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
 
-            <div className="min-h-screen bg-white flex flex-col w-full"
+            <div className="min-h-screen bg-white flex flex-col w-full visualTablet border-tablet"
                 style={{
-                    paddingTop: '90px'
+                    // paddingTop: '90px'
                 }}>
 
                 <VisualTopo tipo='1' titulo='Select Token' caminhoVoltar='/sis/buyTokenPage2'/>

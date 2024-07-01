@@ -10,14 +10,14 @@ let Profile = () => {
 
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
             
-            <div className="min-h-screen flex bg-white flex-col w-full bg-white"
+            <div className="min-h-screen flex bg-white flex-col w-full bg-white visualTablet border-tablet"
                 style={{
-                    paddingTop: '90px'
+                    // paddingTop: '90px'
                 }}>
 
-                <VisualTopo tipo='1' titulo='Setting' caminhoVoltar='/sis/profile'/>
+                <VisualTopo tipo='1' titulo='Setting' caminhoVoltar='/sis/home/homePage'/>
                 
                 <div 
                     className="rounded-2 flex-1 bg-white flex flex-col  items-center sm:py-8 sm:px-4" 

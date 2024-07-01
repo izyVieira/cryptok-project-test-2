@@ -13,7 +13,7 @@ let Portfolio = () => {
         <>
             <NavBar />
             
-            <div className="min-h-screen flex flex-col w-full ">
+            <div className="min-h-screen flex flex-col w-full visualTablet border-tablet">
 
                 <div 
                     className="flex-1 rounded-5 rounded-top-0 flex flex-col justify-center items-center sm:py-8 sm:px-4"
@@ -108,7 +108,9 @@ let Portfolio = () => {
 
                 </div>
 
-                <div 
+                <div style={{
+                    maxHeight: '450px'
+                }}
                     className="flex-1 bg-white flex flex-col justify-center items-center sm:py-8 sm:px-4" 
                     
                 >

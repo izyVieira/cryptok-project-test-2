@@ -15,7 +15,7 @@ export default function Home() {
     return (
         <>
             <NavBar />
-            <div className="min-h-screen pt-16 bg-white flex flex-col w-full">
+            <div className="min-h-screen pt-16 bg-white flex flex-col w-full visualTablet border-tablet">
 
                 <VisualTopo 
                     caminhoVoltar='/sis/signEmail'

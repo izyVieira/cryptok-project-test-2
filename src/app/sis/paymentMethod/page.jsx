@@ -11,12 +11,12 @@ let PaymentMethod = () => {
 
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
             
-            <div className="min-h-screen flex flex-col w-full "
+            <div className="min-h-screen flex flex-col w-full visualTablet border-tablet"
                 style={{
-                    paddingBottom: '45px',
-                    paddingTop: '80px'
+                    // paddingBottom: '45px',
+                    // paddingTop: '80px'
                 }}>
 
                 <VisualTopo tipo='1' titulo='Payment Method' caminhoVoltar='/sis/paymentPage1'/>  

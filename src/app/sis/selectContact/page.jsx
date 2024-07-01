@@ -7,15 +7,15 @@ import Lista from '@/components/lista';
 import VisualTopo from '@/components/visualTopo';
 import Contatos from '@/components/contact';
 
-let Transfer = () => {
+let SelectContact = () => {
 
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
 
-            <div className="min-h-screen bg-white flex flex-col w-full"
+            <div className="min-h-screen bg-white flex flex-col w-full visualTablet border-tablet"
                 style={{
-                    paddingTop: '90px'
+                    // paddingTop: '90px'
                 }}>
 
                 <VisualTopo tipo='1' titulo='Select Contact' caminhoVoltar='/sis/buyTokenPage2'/>
@@ -79,4 +79,4 @@ let Transfer = () => {
     );
 }
 
-export default Transfer;
+export default SelectContact;

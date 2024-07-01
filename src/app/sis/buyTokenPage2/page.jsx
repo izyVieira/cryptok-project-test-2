@@ -77,12 +77,12 @@ let BuyTokenPage2 = () => {
 
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
             
-            <div className="min-h-screen flex flex-col w-full "
+            <div className="min-h-screen flex flex-col w-full visualTablet border-tablet"
                 style={{
-                    paddingBottom: '135px',
-                    paddingTop: '80px'
+                    // paddingBottom: '135px',
+                    // paddingTop: '80px'
                 }}>
 
                 <VisualTopo 

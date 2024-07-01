@@ -6,11 +6,11 @@ let HelpAndSupport = () => {
 
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
 
-            <div className="min-h-screen flex flex-col bg-white w-full"
+            <div className="min-h-screen flex flex-col bg-white w-full visualTablet border-tablet" 
                 style={{
-                    paddingTop: '90px'
+                    // paddingTop: '90px'
                 }}>
 
                 <VisualTopo tipo='1' titulo='Help and Support'  caminhoVoltar='/sis/profile' />

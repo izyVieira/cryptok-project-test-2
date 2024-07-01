@@ -13,8 +13,8 @@ const PaymentMethodPage1 = () => {
 
     return (
         <>
-            <NavBar />
-            <div className="min-h-screen flex flex-col bg-white w-full" style={{ paddingBottom: '45px', paddingTop: '80px' }}>
+            {/* <NavBar /> */}
+            <div className="min-h-screen flex flex-col bg-white w-full visualTablet border-tablet">
                 <VisualTopo tipo='1' titulo='Payment' caminhoVoltar='/sis/paymentPage2'/>
                 <div className="rounded-2 flex-1 flex flex-col justify-center items-center sm:py-8 sm:px-4" data-bs-spy="scroll" data-bs-smooth-scroll="true" tabIndex="0" style={{ overflowY: 'auto' }}>
                     <div style={{ width: '375px', padding: '30px', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center', borderRadius: '20px 20px 0px 0px' }}>

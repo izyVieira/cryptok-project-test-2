@@ -41,7 +41,7 @@ let VisualTopo = (props) => {
             :
             props.tipo === '3'
             ?
-            <div className=" top-20 z-50"> 
+            <div className="pt-5 top-20 z-50"> 
                 <div className="d-flex justify-content-between align-items-center w-100 pb-5">
 
                     <h1 className="text-center flex-1 text-xl sm:text-2xl">{props.titulo}</h1>

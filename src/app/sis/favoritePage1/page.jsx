@@ -10,11 +10,11 @@ let FavoritePage1 = () => {
 
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
             
-            <div className="min-h-screen bg-white flex flex-col w-full "
+            <div className="min-h-screen bg-white flex flex-col w-full visualTablet border-tablet "
                 style={{
-                    paddingTop: '90px'
+                    // paddingTop: '90px'
                 }}>
 
                 <VisualTopo tipo='3' titulo='Favorite' caminhoVoltar='/sis/manegeToken'/>

@@ -10,16 +10,17 @@ let MarketPage1 = () => {
 
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
             
-            <div className="min-h-screen bg-white flex flex-col w-full "
+            <div className="min-h-screen bg-white flex flex-col w-full visualTablet border-tablet"
                 style={{
-                    paddingTop: '90px'
+                    // paddingTop: '90px'
                 }}>
 
                 <VisualTopo tipo='3' titulo='Market' caminhoVoltar='/sis/portfolio-page2'/>
+
                 <div 
-                    className="rounded-2 flex-1 bg-white flex flex-col justify-center items-center sm:py-8 sm:px-4" 
+                    className="rounded-2 flex-1 bg-white flex flex-col items-center sm:py-8 sm:px-4" 
                     data-bs-spy="scroll" 
                     data-bs-smooth-scroll="true" 
                     tabindex="0"
@@ -101,17 +102,15 @@ let MarketPage1 = () => {
 
                     </div>
 
-                    <div className="w-full px-4  flex items-center justify-between"
-                        style={{
-                            position: 'absolute',
-                            flex: 1,
-                            paddingBottom: '150px',
-                            fontWeight: 700
-                        }}>
-                        <h5 className="m-0">Live Prices</h5>
-                    </div>
+                    <div className='w-full'>
 
-                    <Lista/>
+                        <div className="px-5 mt-3 flex items-center justify-between">
+                            <h5 className="m-0">Live Prices</h5>
+                        </div>
+
+                        <Lista styleNone/>
+
+                    </div>
 
                 </div>
 

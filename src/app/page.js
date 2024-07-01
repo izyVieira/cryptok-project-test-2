@@ -18,13 +18,13 @@ export default function Home() {
 
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
             
-            <div className="min-h-screen flex flex-col w-full ">
+            <div className="min-h-screen flex flex-col visualTablet border-tablet">
 
-               <div className="relative w-full h-full">
+               <div className="relative ">
                     <svg
-                        className=" w-full h-full"
+                        className=""
                         width="375"
                         height="622"
                         viewBox="0 0 375 622"
@@ -284,7 +284,7 @@ export default function Home() {
                     </svg>
                 </div>
 
-                <div className="flex items-center justify-center mt-4 h-16">
+                <div className="flex items-center justify-center">
                     
                     {loading ? (
                     <div className="spinner"></div>

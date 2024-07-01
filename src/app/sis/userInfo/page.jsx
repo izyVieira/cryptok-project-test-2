@@ -7,11 +7,11 @@ let UserInfo = () => {
 
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
             
-            <div className="min-h-screen bg-white flex flex-col w-full "
+            <div className="min-h-screen bg-white flex flex-col w-full visualTablet border-tablet"
                 style={{
-                    paddingTop: '90px'
+                    // paddingTop: '90px'
                 }}>
 
                 <VisualTopo tipo='1' titulo='Setting' caminhoVoltar='/sis/profile'/>
@@ -26,7 +26,10 @@ let UserInfo = () => {
                     }}>
 
 
-                    <div className="justify-content-center w-full flex flex-col items-center">
+                    <div className="justify-content-center w-full flex flex-col items-center " 
+                        style={{
+                            paddingTop: '590px'
+                        }}>
 
                         <div className="relative mx-3">
                             <Image
