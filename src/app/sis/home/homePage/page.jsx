@@ -158,7 +158,7 @@ let HomePage = () => {
                         className='relative flex justify-center' 
                         style={{ bottom: '-70px' }}>
 
-                        <a href='/sis/selectContact' className="text-center">
+                        <a href='/sis/transfer' className="text-center">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="20" cy="20" r="19.5" stroke="#FEFEFE"/>
                                 <path d="M14 12H26V14H14V12ZM19 22V28H21V22H26L20 16L14 22H19Z" fill="#FEFEFE"/>

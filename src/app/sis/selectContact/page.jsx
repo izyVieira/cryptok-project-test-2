@@ -6,6 +6,7 @@ import Menu from '@/components/menu';
 import Lista from '@/components/lista';
 import VisualTopo from '@/components/visualTopo';
 import Contatos from '@/components/contact';
+import Botao from '@/components/botao';
 
 let SelectContact = () => {
 
@@ -72,7 +73,7 @@ let SelectContact = () => {
                     </div>
 
                 </div>
-
+                
             </div>
 
         </>

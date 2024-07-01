@@ -5,6 +5,7 @@ import Image from "next/image";
 import Menu from '@/components/menu';
 import Lista from '@/components/lista';
 import VisualTopo from '@/components/visualTopo';
+import Botao from '@/components/botao';
 
 let Transfer = () => {
 
@@ -62,6 +63,10 @@ let Transfer = () => {
                     <Lista styleNone/>
 
                 </div>
+
+                <Botao titulo='Avançar' caminho='/sis/selectContact'>
+
+                </Botao>
 
             </div>
 
