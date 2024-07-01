@@ -6,11 +6,17 @@ import VisualTopo from '@/components/visualTopo';
 import Botao from '@/components/botao';
 
 let Datails = () => {
-    const searchParams = useSearchParams();
-    const nome = searchParams.get('nome');
-    const imgSrc = searchParams.get('imgSrc');
-    const codWallet = searchParams.get('codWallet');
 
+    let buscarDados = () => {
+        let searchParams = useSearchParams();
+
+        return {
+            nome: searchParams.get('nome'),
+            imgSrc: searchParams.get('imgSrc'),
+            codWallet: searchParams.get('codWallet')
+        }
+    }
+    
     return (
         <>
             <NavBar />
@@ -72,9 +78,9 @@ let Datails = () => {
                         <div className="d-flex justify-content-between w-100 px-4 my-4">
 
                             <div className="d-flex">
-                                {imgSrc && (
+                                {buscarDados().imgSrc && (
                                     <Image
-                                        src={imgSrc}
+                                        src={buscarDados().imgSrc}
                                         alt={nome}
                                         width={40}
                                         height={40}
@@ -82,8 +88,8 @@ let Datails = () => {
                                 )}
                 
                                 <div className='mx-2' style={{gab: '16px'}}>
-                                    <h5 style={{fontSize: '16px', fontWeight: 700}}>{nome}</h5>
-                                    <p style={{fontSize: '12px', fontWeight: 400, color: '#9CA4AB'}}>{codWallet}</p>
+                                    <h5 style={{fontSize: '16px', fontWeight: 700}}>{buscarDados().nome}</h5>
+                                    <p style={{fontSize: '12px', fontWeight: 400, color: '#9CA4AB'}}>{buscarDados().codWallet}</p>
                                 </div>
                             </div>
 
