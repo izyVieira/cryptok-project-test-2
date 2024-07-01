@@ -11,7 +11,7 @@ let Datails = () => {
         <>
             {/* <NavBar /> */}
             
-            <div className="min-h-screen flex flex-col w-full visualTablet border-tablet"
+            <div className=" flex flex-col w-full visualTablet border-tablet"
                 style={{
                     // paddingTop: '80px',
                 }}>

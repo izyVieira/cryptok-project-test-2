@@ -133,10 +133,11 @@ body {
 
 .visualTablet{
     background-color: rgb(253, 253, 253);
-    max-width: calc(100% - 30%) !important;
-    height: 100vh;
+    max-width: 400px !important;
+    height: calc(100vh - 50px);
     width: 100%;
     margin: 0 auto;
+    /* margin: 50px 0; */
 }
 
 .border-tablet {
