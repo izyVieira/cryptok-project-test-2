@@ -149,15 +149,18 @@ body {
   border: 0.4rem solid black;
   border-radius: 38px;
   pointer-events: none;
+  overflow: hidden;
 }
 
 .visualTablet {
     background-color: #fdfdfd;
-    max-width: 400px !important;
-    height: calc(100vh - 50px);
+    max-width: 450px !important;
     width: 100%;
     margin: 0 auto;
+    margin: 60px 0px;
+    height: calc(100vh - 120px);
 }
+
 .visualTablet::before{
     content: '';
     position: absolute;
@@ -193,6 +196,24 @@ body {
         border-radius: 0;
         position: relative;
     }
+}
+
+ ::-webkit-scrollbar {
+    width: 8px; /* largura da scrollbar */
+    border-radius: 10px; /* border-radius para cantos arredondados */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* cor de fundo da track (parte da scrollbar não preenchida) */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* cor do thumb (parte da scrollbar que pode ser arrastada) */
+    border-radius: 10px; /* border-radius para cantos arredondados do thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* cor do thumb ao passar o mouse */
 }
 
 

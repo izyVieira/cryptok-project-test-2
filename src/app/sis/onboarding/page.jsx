@@ -346,9 +346,13 @@ let Onboarding = () => {
     };
 
     return (
-        <div className="visualTablet border-tablet">
+        <div className="visualTablet border-tablet min-h-screen flex flex-col w-full" style={{
+                overflow: 'hidden',
+            }}>
                 {/* <NavBar /> */}
-            <div className="min-h-screen flex flex-col w-full">
+            <div className="min-h-screen flex flex-col w-full" style={{
+                overflow: 'auto'
+            }}>
                 <div className="flex-grow flex flex-col items-center justify-center p-4 mt-16">
                 <div className="max-w-md w-full">{renderContent()}</div>
                 </div>

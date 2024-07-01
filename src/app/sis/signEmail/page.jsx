@@ -15,8 +15,8 @@ let signEmail = () => {
 
   return (
     <>
-        <NavBar/>
-        <div className="min-h-screen pt-16 flex flex-col w-full visualTablet border-tablet">
+        {/* <NavBar/> */}
+        <div className="min-h-screen flex flex-col w-full visualTablet border-tablet">
     
             <VisualTopo 
                 tipo='1' 

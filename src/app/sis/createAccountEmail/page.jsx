@@ -14,8 +14,8 @@ let createAccountEmail = () => {
 
     return (
         <>
-            <NavBar/>
-            <div className="min-h-screen bg-white pt-16 flex flex-col w-full visualTablet border-tablet">
+            {/* <NavBar/> */}
+            <div className="min-h-screen bg-white  flex flex-col w-full visualTablet border-tablet">
 
             <VisualTopo 
                 titulo='Sign Up'
